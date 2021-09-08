@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="he"  >
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css"/>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css"
+    />
+    <link rel="stylesheet" href="style.css"/>
+    <title>Slider</title>
+  </head>
+  <body>
+    <div class="card-header1">חבילות אינטרנט</div>
+
+    <div class="py-5 col-xl-10 col-md-10 col-11 mx-auto">
+  
+      <div id="secondary-slider" class="splide my-3" >
+        <div class="splide__track">
+          <ul class="splide__list">
+         
+            <li class="splide__slide rounded upper-boxes">
+           hi
+     
+            </li>
+            <li class="splide__slide rounded upper-boxes">
+            hello
+            
+            </li>
+            <li class="splide__slide rounded upper-boxes">
+              my name
+            </li>
+            <li class="splide__slide rounded upper-boxes">
+              is
+            </li>
+            <li class="splide__slide rounded upper-boxes">
+              test
+            </li>
+            <li class="splide__slide rounded upper-boxes">
+           
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="primary-slider" class="splide" >
+        <div class="splide__track">
+          <ul class="splide__list">
+        
+            <li class="splide__slide rounded lower-boxes">
+
+           <div class="row">
+            <div class="col-sm-4">.col-sm-4</div>
+            <div class="col-sm-4"> <div class="col">
+              <div class="row-sm-4" >row-sm-4</div>
+              <div class="row-sm-4" >.row-sm-4</div>
+              <div class="row-sm-4" >row-sm-4</div>
+            </div></div>
+            <div class="col-sm-4">col-sm-4</div>
+          </div>
+
+            </li>
+            <li class="splide__slide rounded lower-boxes">
+              <div class="row">
+                <div class="col-sm-4">slider 2</div>
+                <div class="col-sm-4"> <div class="col">
+                  <div class="row-sm-4" >row-sm-4</div>
+                  <div class="row-sm-4" >.row-sm-4</div>
+                  <div class="row-sm-4" >row-sm-4</div>
+                </div></div>
+                <div class="col-sm-4">col-sm-4</div>
+              </div>
+    
+            </li>
+            <li class="splide__slide rounded lower-boxes">
+              <div class="row">
+                <div class="col-sm-4">slider 3</div>
+                <div class="col-sm-4"> <div class="col">
+                  <div class="row-sm-4" >row-sm-4</div>
+                  <div class="row-sm-4" >.row-sm-4</div>
+                  <div class="row-sm-4" >row-sm-4</div>
+                </div></div>
+                <div class="col-sm-4">col-sm-4</div>
+              </div>
+    
+            </li>
+            <li class="splide__slide rounded lower-boxes">
+              <div class="row">
+                <div class="col-sm-4">slider 4</div>
+                <div class="col-sm-4"> <div class="col">
+                  <div class="row-sm-4" >row-sm-4</div>
+                  <div class="row-sm-4" >.row-sm-4</div>
+                  <div class="row-sm-4" >row-sm-4</div>
+                </div></div>
+                <div class="col-sm-4">col-sm-4</div>
+              </div>
+    
+            </li>
+            <li class="splide__slide rounded lower-boxes">
+              <div class="row">
+                <div class="col-sm-4">slider 5</div>
+                <div class="col-sm-4"> <div class="col">
+                  <div class="row-sm-4" >row-sm-4</div>
+                  <div class="row-sm-4" >.row-sm-4</div>
+                  <div class="row-sm-4" >row-sm-4</div>
+                </div></div>
+                <div class="col-sm-4">col-sm-4</div>
+              </div>
+    
+            </li>
+            <li class="splide__slide rounded lower-boxes">
+        
+            </li>
+          </ul>
+        </div>
+      </div>
+    
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+    <script>
+      var secondarySlider = new Splide("#secondary-slider").mount();
+      var primarySlider = new Splide("#primary-slider");
+      primaryslider.sync(secondarySlider).mount();
+    </script>
+
+    <script>
+ 
+      document.addEventListener("DOMContentLoaded", function () {
+        var secondarySlider = new Splide("#secondary-slider", {
+          fixedWidth: "20%", 
+          height: 108, 
+          gap: 15,
+          cover: true, 
+          isNavigation: true,
+          focus: 'center',
+          rewind: true, 
+         pagination:false,
+         focus    : 'center',
+	perPage  : 2,
+	trimSpace: false,
+          breakpoints: {
+        
+            768: {
+              fixedWidth: "30%",
+              height: 108,
+              pagination:false,
+              focus: 'center',
+            },
+           
+            425: {
+              fixedWidth: "50%",
+              height: 108,
+              pagination:false,
+              focus: 'center',
+            },
+            375: {
+              fixedWidth: "40%",
+              height: 80,
+                   pagination:false,
+                   focus: 'center',
+              
+            },
+          },
+        }).mount();
+
+        // Primary
+        var primarySlider = new Splide("#primary-slider", {
+          type: "fade",
+          height: "40%",
+          width:"42%",
+          pagination: false,
+          
+          gap: 10, 
+          focus: 'center',
+          arrows: false,
+          breakpoints: {
+           
+            768: {
+              fixedWidth: "70%",
+              height: 150,
+              pagination:false,
+              focus: 'center',
+            },
+
+            425: {
+              fixedWidth: "60%",
+              height: 150,
+              pagination:false,
+              focus: 'center',
+            },
+            375: {
+              fixedWidth: "70%",
+              height: 150,
+                   pagination:false,
+                   focus: 'center',
+              
+            },
+          },
+          
+          cover: true,
+        }); // do not call mount() here.
+
+
+        primarySlider.sync(secondarySlider).mount();
+      });
+
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

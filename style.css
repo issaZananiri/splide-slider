@@ -1,0 +1,93 @@
+.upper-boxes{
+    height: unset;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    margin: 0px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-box-shadow: 0 10px 0 0 #FFF017;
+    box-shadow: 0 10px 0 0 #FFF017;
+    outline: 3px auto #1d3576;}
+    
+
+.row {
+    --bs-gutter-x: -0.5rem;}
+.lower-boxes{
+    height: unset;
+    /* display: flex;
+    justify-content: center; */
+    background-color: #fff;
+    margin: 0px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-box-shadow: 10px 10px 0 10px #FFF017;
+    box-shadow: 10px 10px 0 10px #FFF017;
+    outline: 3px auto #1d3576;}
+    
+    #primary-slider{
+        /* height: 200px;
+width: 300px; */
+/* margin-left: 470px; */
+margin-left: auto;
+margin-right: auto;
+    }
+
+    img {
+        border-radius: 50%;
+        width: 200px;
+        margin-top: 15px;
+        height: 200px;
+      }
+    svg{
+        float: right;
+    }
+    .card-header1 {
+        margin-bottom: 7px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        max-height: 46px;
+        overflow: hidden;
+        color: #1d3576;
+        
+        /* font-family: alef; */
+        text-align: center;
+      
+      }
+      .splide--nav>.splide__track>.splide__list>.splide__slide:focus {
+        outline: visible;
+    }
+/* span {
+        text-align: center;
+        font-style: normal;
+      
+        font-size: 20px;
+        line-height: 24px;
+        max-height: 46px;
+        overflow: hidden;
+        color: #1d3576;} */
+
+    .splide__pagination{
+        visibility: hidden;
+    }
+    .splide__list {
+        /* margin: 0!important; */
+        padding: 1px;
+        width: -webkit-max-content;
+        width: max-content;
+        will-change: transform;
+    }
+    .splide__track {
+        position: relative;
+        z-index: 0;
+        overflow: visible;
+    }
+    .splide__track.is-active {
+        /* transform: scale(0.002); */
+        transition: .3s;
+      
+        margin-left: 10px;
+        margin-right: 10px;
+      }
